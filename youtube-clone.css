@@ -1,0 +1,374 @@
+body {
+  width: 100%;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 56px;
+  background-color: white;
+  padding: 10px;
+}
+
+.menu {
+  padding: 12px;
+  font-size: 24px;
+  margin: 18px;
+}
+
+.logo {
+  margin-top: 15px;
+  padding: 18px 18px 14px 18px;
+}
+.logo img {
+  width: 90px;
+  height: 20px;
+}
+.serach {
+  display: flex;
+  margin-left: 10%;
+  width: 50%;
+  padding: 12px;
+}
+
+.searchbar {
+  display: flex;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 40px;
+  width: 90%;
+  background-color: #f8f8f8;
+}
+
+.searchbar input {
+  border: none;
+  pad: 5px;
+  margin-left: 5%;
+  width: 85%;
+  background-color: #f8f8f8;
+}
+
+.serach i {
+  padding-top: 5px;
+  padding-left: 2px;
+}
+
+.microphone {
+  display: flex;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  /* background-color: antiquewhite; */
+}
+.microphone i {
+  margin: auto;
+}
+.microphone:hover {
+  background-color: #e6e3e3;
+}
+.searchbar button {
+  background-color: #f8f8f8;
+  border: none;
+  overflow: hidden;
+  border-color: black;
+  border-radius: 0 10px 10px 0;
+  border-left: 1px solid #131212;
+  cursor: pointer;
+}
+.profile_section {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  margin-left: 15%;
+}
+.profile_section i {
+  font-size: 24px;
+  margin-left: 20px;
+  color: black;
+}
+.profile_section i:hover {
+  background-color: #f8f8f8;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  width: 100px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 60px;
+}
+.sidebar i {
+  margin: 15px;
+  cursor: pointer;
+}
+.sidebar img {
+  margin: 15px;
+}
+.sidebar a {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.topics {
+  text-wrap: nowrap;
+  overflow: scroll;
+  margin-left: 120px;
+  padding: 10px;
+  background-color: white;
+}
+
+.main-content {
+  margin-left: 100px;
+  padding: 30px;
+}
+
+.rowh {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  background-color: white;
+
+  border-radius: 10px;
+  width: 351px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.video {
+  width: 100%;
+  height: 208px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.video video {
+  width: 350px;
+  height: 208px;
+  border-radius: 10px;
+}
+
+.video video:hover {
+  border-radius: 0px;
+}
+
+.video-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.video-info img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #ddd;
+  margin-right: 10px;
+}
+
+.column-1 {
+  flex-grow: 1;
+  margin-top: 5%;
+}
+
+.column-2 {
+  flex-grow: 2;
+  margin-left: 10px;
+}
+.column-2 h4 {
+  position: relative;
+  top: -15px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.column-2 p {
+  position: relative;
+  top: -20px;
+  font-size: 13px;
+  color: #777;
+}
+
+.column-3 {
+  flex-grow: 1;
+  position: relative;
+  top: -15px;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    width: 50px;
+    height: 100vh;
+    background-color: white;
+    padding: 20px 10px;
+    margin-top: 60px;
+  }
+  .sidebar i {
+    margin: 8px;
+    cursor: pointer;
+  }
+  .sidebar img {
+    margin: 8px;
+  }
+  .sidebar a {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    width: 321px;
+    height: 300px;
+    margin-bottom: 15px;
+  }
+
+  .main-content {
+    margin-left: 80px;
+    padding: 10px;
+  }
+
+  .video {
+    width: 100%;
+    height: 208px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .video video {
+    width: 320px;
+    height: 208px;
+    border-radius: 10px;
+  }
+
+  .header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 56px;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .menu {
+    padding: 6px;
+    font-size: 12px;
+    margin: 9px;
+  }
+
+  .logo {
+    margin-top: 8px;
+    padding: 18px 18px 14px 18px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 10px;
+  }
+
+  .serach {
+    display: flex;
+    margin-left: 5px;
+    width: 200px;
+    padding: 10px 2px;
+  }
+
+  .searchbar {
+    display: flex;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: #f8f8f8;
+  }
+
+  .searchbar input {
+    border: none;
+    pad: 5px;
+    margin-left: 4px;
+    width: 120px;
+    background-color: #f8f8f8;
+  }
+
+  .serach i {
+    padding-top: 5px;
+    padding-left: 2px;
+  }
+
+  .microphone {
+    display: flex;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    /* background-color: antiquewhite; */
+  }
+  .microphone i {
+    margin: auto;
+  }
+  .microphone:hover {
+    background-color: #e6e3e3;
+  }
+  .searchbar button {
+    background-color: #f8f8f8;
+    border: none;
+    overflow: hidden;
+    border-color: black;
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid #131212;
+    cursor: pointer;
+  }
+  .profile_section {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    position: relative;
+    left: -70px;
+  }
+
+  .profile_section img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile_section i {
+    font-size: 12px;
+    margin-left: 5px;
+    color: black;
+  }
+  .profile_section i:hover {
+    background-color: #f8f8f8;
+  }
+}
